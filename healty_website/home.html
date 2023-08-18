@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="object.js"></script>
+</head>
+<body>
+<table>
+    <th colspan="3" id="title">Health Website</th>
+    <tr>
+        <td colspan="2">Name: <input id="name" type="text" size="40"></td>
+        <td>Gender: <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td>Age (in year):<input id="age" type="text" size="2" maxlength="2"></td>
+        <td>Weight (in Kg): <input id="weight" type="text" size="2" maxlength="3"></td>
+        <td>Height (in Cm): <input id="height" type="text" size="2" maxlength="3"></td>
+    </tr>
+    <tr>
+        <td colspan="3"><button id="analyze" onclick="analyze()">Analyze!</button></td>
+    </tr>
+    <tr>
+        <td colspan="3"><label id="result_name"></label></td>
+    </tr>
+    <tr>
+        <td colspan="3"><label id="result_gender"></label><label id="result_idealWeight"></label></td>
+    </tr>
+    <tr>
+        <td colspan="3"><label id="result_idealDrink"></label></td>
+    </tr>
+    <tr>
+        <td colspan="3"><label id="result_age"></label><label id="result_recommendation"></label></td>
+    </tr>
+</table>
+</body>
+</html>
