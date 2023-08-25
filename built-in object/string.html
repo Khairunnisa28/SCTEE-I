@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var text = "abcdefghijklmnopqrstuvwxyz";
+        document.getElementById("demo").innerHTML =
+        "<p><b>text:</b>"+ text + "</p>" +
+        "<p><b>text.length:</b>"+ text.length + "</p>" +
+        "<p><b>text.toUpperCase():</b>"+ text.toUpperCase() + "</p>" + // Changed toUpperCase() to correct capitalization
+        "<p><b>text.indexOf('a'):</b>"+ text.indexOf('a') + "</p>" ;
+    </script>
+</body>
+</html>
