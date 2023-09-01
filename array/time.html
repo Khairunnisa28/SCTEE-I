@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <title>Time Website</title>
+</head>
+<body>
+    <div>
+        <label id="date"></label>
+        <label id="time"></label>
+    </div>
+    <script>
+        var dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        function startTime(){
+            const today = new Date();
+            var day = today.getDay();
+            var date = today.getDate();
+            var month = today.getMonth();
+            var years = today.getFullYear();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            minute = checkTime(minute);
+            second = checkTime(second);
+            document.getElementById("date"). innerHTML = dayName[day] + "," +monthName[month] + " " + date + " " + years + "<br>";
+            document.getElementById("time"). innerHTML = hour + ":" + minute + ":" + second;
+            setTimeout(startTime, 1000); 
+        }
+        function checkTime(i){
+            if (i < 10){i = "0" + i};
+            return i;
+        }
+        startTime();
+    </script>
+</body>
+</html>
