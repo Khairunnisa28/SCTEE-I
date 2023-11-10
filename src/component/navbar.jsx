@@ -1,4 +1,5 @@
 import Logo from '../image/Logo.png';
+import './navbar.css';
 
 function Navbar(){
     return(
